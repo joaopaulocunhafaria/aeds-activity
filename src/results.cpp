@@ -12,7 +12,7 @@ results::results()
 
   ofstream out = ofstream("results.csv");
 
-  out << "Tempo de execucao, Entrada de dados" << endl;
+  out << "Tempo de execucao, Entrada de dados, Algoritimo, Ordenacao" << endl;
 
   out.close();
 }
@@ -33,7 +33,7 @@ void results::write_results(int methodoNumber, int size, string type, double tim
 
   ofstream out = ofstream("results.csv", ofstream::app);
 
-  out <<  time << ", "<< size << endl; 
+  out <<  time << ", "<< size <<", "<< methodoNumber<< ", "<< type<< endl; 
 
   out.close();
 }

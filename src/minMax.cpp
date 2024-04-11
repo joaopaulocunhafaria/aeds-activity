@@ -278,7 +278,7 @@ void minMax::manage_executions()
     // Para realizar testes de forma personalizada, basta remover os
     // comentários do caso desejado, como foi feito na última execução.
     // A maneira como o código está disposto foi quando se realizou o
-    // cálculo de tempo dos algoritmos com massas de dados aleatórias.
+    // cálculo de tempo dos algoritmos com massas de dados crescentes.
     
 
 
