@@ -237,18 +237,18 @@ void mergeSortDecrescent(int *arr, int l, int r)
     mergeDecrescent(arr, l, m, r);
 }
 
-int *minMax::create_crescent_sort_array(int n)
+int *minMax::create_crescent_sort_array(int * array,int n)
 {
-    int *array = creat_random_array(n);
+   
 
     mergeSortCrescent(array, 0, n - 1);
 
     return array;
 }
 
-int *minMax::create_decrescent_sort_array(int n)
+int *minMax::create_decrescent_sort_array(int *array, int n)
 {
-    int *array = creat_random_array(n);
+     
 
     mergeSortDecrescent(array, 0, n - 1);
 
@@ -307,10 +307,8 @@ void minMax::manage_executions()
 
         // media = 0;
         // time = 0;
-
-        delete[] array;
-
-        array = create_crescent_sort_array(n);
+ 
+        array = create_crescent_sort_array(array,n);
 
         for (int i = 0; i < 10; i++)
         {
@@ -323,9 +321,8 @@ void minMax::manage_executions()
         media = 0;
         time = 0;
 
-        delete[] array;
-
-        array = create_decrescent_sort_array(n);
+ 
+        array = create_decrescent_sort_array(array,n);
 
         // for (int i = 0; i < 10; i++)
         // {
@@ -357,9 +354,8 @@ void minMax::manage_executions()
         // media = 0;
         // time = 0;
 
-        delete[] array;
-
-        array = create_crescent_sort_array(n);
+ 
+        array = create_crescent_sort_array(array,n);
 
         for (int i = 0; i < 10; i++)
         {
@@ -372,9 +368,8 @@ void minMax::manage_executions()
         media = 0;
         time = 0;
 
-        delete[] array;
-
-        array = create_decrescent_sort_array(n);
+ 
+        array = create_decrescent_sort_array(array,n);
 
         // for (int i = 0; i < 10; i++)
         // {
@@ -405,9 +400,8 @@ void minMax::manage_executions()
         // media = 0;
         // time = 0;
 
-        delete[] array;
-
-        array = create_crescent_sort_array(n);
+ 
+        array = create_crescent_sort_array(array,n);
 
         for (int i = 0; i < 10; i++)
         {
@@ -420,9 +414,8 @@ void minMax::manage_executions()
         media = 0;
         time = 0;
 
-        delete[] array;
-
-        array = create_decrescent_sort_array(n);
+ 
+        array = create_decrescent_sort_array(array,n);
 
         // for (int i = 0; i < 10; i++)
         // {
@@ -454,9 +447,8 @@ void minMax::manage_executions()
         // media = 0;
         // time = 0;
 
-        delete[] array;
-
-        array = create_crescent_sort_array(n);
+ 
+        array = create_crescent_sort_array(array,n);
 
         for (int i = 0; i < 10; i++)
         {
@@ -469,9 +461,8 @@ void minMax::manage_executions()
         media = 0;
         time = 0;
 
-        delete[] array;
-
-        array = create_decrescent_sort_array(n);
+ 
+        array = create_decrescent_sort_array(array,n);
 
         // for (int i = 0; i < 10; i++)
         // {
